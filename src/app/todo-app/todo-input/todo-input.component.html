@@ -1,0 +1,21 @@
+<form>
+    <div class="form-group">  
+    <!-- <a 
+    class="list-group-item"
+    class="col-xs-10" 
+    style="cursor: pointer"
+    *ngFor="let item of items"
+    >
+    </a> -->
+    </div>
+    <div class="input-group-prepend">       
+        <input 
+        type="text"
+        id="newItem"
+        class="form-control" 
+        placeholder="Add To-Do Item"
+        for="validationCustom01"
+        #newItemInput>    
+        <button class="btn btn-default input-group-text" (click)="onAddItem()" type="reset">Add</button>   
+    </div> 
+</form>

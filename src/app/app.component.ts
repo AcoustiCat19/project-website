@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alexmain';
+  loadedFeature = 'calc';
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  
+  }
 }

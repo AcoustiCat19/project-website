@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <button class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarTogglerDemo02" 
+          aria-controls="navbarTogglerDemo02" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02" role="group" aria-label="header options">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li type="button" 
+      class="nav-item active btn-group"
+      role="presentation" 
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}">
+        <a class="navbar-brand" routerLink="/">Home</a>
+      </li>
+      <li 
+        type="button" 
+        class="nav-item active btn-group"
+        role="presentation" 
+        routerLinkActive="active">
+          <a class="nav-link" routerLink="/cv">CV</a>
+      </li>
+      <li 
+        type="button" 
+        class="nav-item active btn-group"
+        role="presentation"  
+        data-toggle="dropdown"
+        routerLinkActive="active">        
+          <span class="nav-link"><i>Projects</i></span>
+      </li>     
+      <li class="nav-item active btn-group" style="margin-left: 10px"><a class="nav-link" routerLink="/studentloancalc">Student Loan Calculator</a></li>
+      <li class="nav-item active btn-group" style="margin-left: 10px"><a class="nav-link" routerLink="/todolist">To-Do List</a></li>
+    </ul>
+  </div>
+</nav>

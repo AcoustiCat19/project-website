@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="col md-4 col sm-8">
+            <div class="row text">
+                <h4> Enter multiple loans or different variables of the same loan for comparison!</h4>
+                <div class="col-sm-5 form-group">
+                    <label for="amount">Current Loan Balance</label>
+                    <input 
+                    type="number" 
+                    id="amount"
+                    class="form-control"
+                    placeholder="For $25,432.10 enter 25432.10 (no $ or comma)"
+                    #amountInput>
+                </div>
+                <div class="col-sm-7 form-group">
+                    <label for="name">Name</label>
+                    <input 
+                    type="text" 
+                    id="name" 
+                    class="form-control"
+                    placeholder="To help you keep track of multiple loans or different iterations of the same loan"
+                    #nameInput>
+                </div>
+                <div class="col-sm-7 form-group">
+                    <label for="interestRate">Interest Rate</label>
+                    <input 
+                    type="number" 
+                    id="interestRate" 
+                    class="form-control"
+                    placeholder="For 6.3% enter 6.3"
+                    #interestRateInput>
+                </div>
+                <div class="col-sm-7 form-group">
+                    <label for="monthsToPayOff">Loan Term in Months OR In How Many Months Would You Like to Pay Off Your Loan?</label>
+                    <input 
+                    type="number" 
+                    id="monthsToPayOff" 
+                    class="form-control"
+                    placeholder="For 3 years enter 36 months"
+                    #monthsToPayOffInput>
+                </div>
+                <div class="col-sm-7 form-group" id="em">
+                    <em>The variables you enter here will be saved for your next session!</em>
+                </div>
+                <!-- <div class="col-sm-7 form-group">
+                    <label for="desiredMonthlyPayment">OPTION TWO: Desired Monthly Payment Amount (must be greater than or equal to required monthly payment)</label>
+                    <input 
+                    type="number" 
+                    id="desiredMonthlyPayment" 
+                    class="form-control"
+                    #desiredMonthlyPaymentInput>
+                </div> -->
+                <!-- <div>
+                    <h4>OR</h4>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-success" (click)="onAddBalance()">Add</button>
+                    <!-- <button class="btn btn-danger">Delete</button> -->
+                    <button class="btn btn-primary" (click)="onClearAll()">Clear All</button>
+                </div>
+            </div>
+    </div>
+</div>

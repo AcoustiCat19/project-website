@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+  }
+.background {
+    position: fixed;
+/* The image used */
+    background-image: url("src/blue-futuristic-pattern.jpg");
+    /* background-color: tan; */
+    z-index: -1;
+    opacity: .8;
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.header-text {
+    color: white
+} 

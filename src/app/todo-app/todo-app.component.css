@@ -1,0 +1,30 @@
+body{ padding: 0; margin: 0;
+}form{ max-width: 25em; margin: 1em auto;}
+.container {
+    background-color: whitesmoke;
+    padding-bottom: 3mm;
+    outline-style: ridge;
+}
+.list-group-item {
+    padding-top: 3mm;
+}
+.btn-danger {
+    float: inline-end;
+}
+/* #state-1:active.mouseover {
+    background-color: yellow;
+}
+#state-2:active.mouseover {
+    background-color: yellow;
+}
+#state-3:active.mouseover {
+    background-color: yellow;
+}
+#dropdown {
+    scroll-padding-bottom: 25mm;
+}
+
+.ns {
+    background-color: green;
+} */
+

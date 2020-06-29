@@ -1,0 +1,57 @@
+<div id="studentloancalc" class="container">
+    <div container="loancalc-input">
+        <div class="row">
+            <div class="col md-4 col sm-8">
+                <app-calc-input
+                    (balanceInputted)="onBalanceInputted($event)"
+                    (balanceCleared)="onBalanceCleared()">
+                </app-calc-input>
+                <hr>
+                <ul class="list-group">
+                    <li 
+                        class="list-group-item" 
+                        style="cursor: pointer"
+                        *ngFor="let balance of balances; let idx = index">
+                    <div class="row">
+                        <div class="col-md-3">
+                            Loan Name: <b>{{ balance.name }} </b>
+                        </div>
+                        <div class="col-md-3">
+                            Current Loan Balance: <b>{{ balance.amount }}</b>
+                        </div>
+                        <div class="col-md-3">
+                            Interest Rate: <b>{{ balance.interestRate }}</b>
+                        </div>
+                        <div class="col-md-3">
+                            Approximate Monthly Payment: <b>{{ balance.monthlyPaymentAmount.toPrecision(5) }}</b>
+                        </div>
+                        <div class="col-md-3">
+                            Total Amount Paid for Loan: <b>{{ balance.totalPaymentAmount.toPrecision(7) }}</b>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger" (click)="onDeleteBalance(idx)">Delete</button>
+                        </div>
+                    </div> 
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <script src= "angular.min.js"></script>
+<script src= "calculator.js"></script>
+ 
+<div ng-app="CalculatorApp" ng-controller="CalculatorController">
+  <p><input type="number" ng-model="a"></p>
+  <p><input type="number" ng-model="b"></p>
+  <p><select ng-model="operator">
+        <option>+</option>
+        <option>*</option>
+        <option>-</option>
+        <option>/</option>
+     </select></p>
+  <p>{{ result() }}</p>
+ </div> -->

@@ -1,0 +1,42 @@
+<div id="todo" class="container">
+    <div container="todo-input" >
+        <div class="col md-4 col sm-8" >
+            <h2>To-Do List</h2>
+            <h6>Any items you enter here will be saved for your next session!</h6>
+        </div>
+        <app-todo-input 
+            (itemInputted)="onItemInputted($event)">
+        </app-todo-input>
+        <ul class="list-group">
+            <li 
+                class="list-group-item"
+                style="cursor: pointer"
+                *ngFor="let item of items; let idx = index">
+                <div class="row">
+                    <div class="col md-4 col sm-8" id="output">
+                        {{ item.name }}                            
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>Select Status</label>
+                                <select 
+                                    class="form-control" 
+                                    id="dropdown"
+                                    value="{{ item.itemStatus || 'Not Started' }}" 
+                                    (change)="onStateChange(idx, $event.target.value)">
+                                    <option id="ns">Not Started</option>
+                                    <option id="ip">In Progress</option>
+                                    <option id="c">Completed</option>
+                                    <option id="b">Blocked</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-danger"  (click)="onDeleteItem(idx)">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

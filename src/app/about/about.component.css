@@ -1,0 +1,12 @@
+.container {
+    z-index: 10;
+    background-color: whitesmoke;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-size: bold;
+}

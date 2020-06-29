@@ -1,0 +1,19 @@
+/* a.title-main {
+    color: red;
+    font-size: larger;
+}
+
+ul li a.nav-buttons {
+    color: skyblue;
+}
+
+a.manage-button {
+    color: grey
+} */
+
+.hover-effect:hover {
+    cursor: pointer;
+}
+.projects {
+    text-emphasis-style: italics;
+}
